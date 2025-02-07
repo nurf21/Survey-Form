@@ -1,0 +1,94 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f0f8ff;
+  color: #333;
+}
+
+#title {
+  text-align: center;
+  color: #2c3e50;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  color: #7f8c8d;
+  margin-bottom: 40px;
+}
+
+#survey-form {
+  background-color: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 96%;
+  padding: 12px;
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+select {
+  width: 100%;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+.radio-group label, .checkbox-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  width: auto;
+  margin: 0;
+}
+
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+button#submit {
+  width: 100%;
+  padding: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button#submit:hover {
+  background-color: #2980b9;
+}
+
+span {
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
