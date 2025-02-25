@@ -24,6 +24,7 @@ body {
   margin-bottom: 40px;
   font-size: 18px;
   font-weight: 400;
+  opacity: 0.8;
 }
 
 #survey-form {
@@ -83,12 +84,14 @@ input:focus, select:focus, textarea:focus {
   gap: 8px;
   font-size: 16px;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 input[type="radio"], input[type="checkbox"] {
   width: auto;
   margin: 0;
   margin-right: 10px;
+  accent-color: #3498db;
 }
 
 textarea {
@@ -97,6 +100,8 @@ textarea {
   padding: 12px;
   font-size: 16px;
   overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #3498db #f0f8ff;
 }
 
 button#submit {
@@ -121,4 +126,5 @@ span {
   font-size: 0.9em;
   color: #7f8c8d;
   font-style: italic;
+  opacity: 0.8;
 }
