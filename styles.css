@@ -5,6 +5,7 @@ body {
   background-color: #f0f8ff;
   color: #333;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #title {
@@ -13,6 +14,7 @@ body {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
+  text-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 #description {
@@ -21,6 +23,7 @@ body {
   color: #7f8c8d;
   margin-bottom: 40px;
   font-size: 18px;
+  font-weight: 400;
 }
 
 #survey-form {
@@ -31,12 +34,16 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0,0,0,0.1);
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .form-group {
   margin-bottom: 25px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 label {
@@ -44,6 +51,7 @@ label {
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 16px;
+  color: #333;
 }
 
 input, select, textarea {
@@ -54,10 +62,12 @@ input, select, textarea {
   font-size: 16px;
   margin-top: 5px;
   box-sizing: border-box;
+  transition: border-color 0.3s;
 }
 
 select {
   width: 100%;
+  padding: 12px;
 }
 
 input:focus, select:focus, textarea:focus {
@@ -72,11 +82,13 @@ input:focus, select:focus, textarea:focus {
   align-items: center;
   gap: 8px;
   font-size: 16px;
+  margin-bottom: 10px;
 }
 
 input[type="radio"], input[type="checkbox"] {
   width: auto;
   margin: 0;
+  margin-right: 10px;
 }
 
 textarea {
@@ -84,6 +96,7 @@ textarea {
   resize: vertical;
   padding: 12px;
   font-size: 16px;
+  overflow-y: auto;
 }
 
 button#submit {
@@ -97,6 +110,7 @@ button#submit {
   cursor: pointer;
   transition: background-color 0.3s;
   margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 button#submit:hover {
@@ -106,4 +120,5 @@ button#submit:hover {
 span {
   font-size: 0.9em;
   color: #7f8c8d;
+  font-style: italic;
 }
