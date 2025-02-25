@@ -82,6 +82,7 @@ input:focus, select:focus, textarea:focus {
   border-color: #3498db;
   outline: none;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #f7f7f7;
 }
 
 .radio-group label, .checkbox-group label {
